@@ -1,0 +1,58 @@
+<?php
+
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RegisterController;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/home2', function () {
+    return view('home2');
+});
+
+Route::get('/admin-panel', [AdminController::class,'admin']);
+
+//page create product
+Route::get('/add-product', [ProductController::class,'redirectToCreateProductPage']);
+
+//post data produk
+Route::post('/post-add-product',[ProductController::class, 'createProduct']);
+
+//page update produck
+Route::get('/edit-product-page/{id}',[ProductController::class,'editProductPage']);
+//post update data dari table
+Route::post('/edit-product/{id}',[ProductController::class,'editProduct']);
+
+//delete
+Route::post('/delete-product/{id}',[ProductController::class, 'deleteProduct']);
+
+//Register
+Route::get('/register', function () {
+    return view('register');
+});
+
+//Login
+Route::get('/login', function () {
+    return view('login');
+});
+
+
+Route::post('/register', [RegisterController::class, 'store']);
+Route::post('/login', [LoginController::class, 'aunth']);

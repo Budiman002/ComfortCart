@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f9f1e9;
+}
+
+.catalog {
+    width: 1759px;
+    height: 752px;
+    background-color: #f9f1e9;
+    margin: auto;
+    margin-top: 1404px;
+}
+
+.catalog-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.produk {
+    font-size: 20px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    font-size: 28px;
+}
+
+.aa {
+    display: flex;
+    flex-direction: row;
+}
+
+.diskon {
+    color: red;
+}
+
+.eclipse {
+    margin-top: 10px;
+}
+
+.merk {
+    display: flex;
+    flex-direction: row;
+    gap: 245px;
+    padding-top: 20px;
+}
+
+.eclipse {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 360px;
+}
+
+.catalog22 {
+    width: 1759px;
+    height: 752px;
+    background-color: #f9f1e9;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.catalog-2323 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-22 {
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+    gap: 300px;
+}
+
+.bb {
+    display: flex;
+    flex-direction: row;
+}
+
+.merk {
+    gap: 250px;
+}
+
+.catalasto {
+    width: 1759px;
+    height: 752px;
+    background-color: #f9f1e9;
+    margin: auto;
+    margin-top: 1025px;
+}
