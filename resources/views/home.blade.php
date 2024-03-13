@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}" />
     <title>Comfycart</title>
   </head>
   <body>
@@ -64,14 +63,6 @@
           </ul>
         </div>
       </section>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
       <div class="catalog">
         <div>
           <img src="asset/1. On Sale.png" alt="" />
@@ -116,9 +107,7 @@
               <img src="{{ asset('asset/Eclipse.png') }}" alt="">
             </div>
         </div>
-  
-  
-  
+
         <div class="catalog22">
           <div>
             <img src="asset/2. Newest Product.png" alt="" />
@@ -162,10 +151,6 @@
           </div>
         </div>
         </div>
-  
-        
-  
-  
   
         <div class="catalasto">
           <div>
@@ -217,14 +202,6 @@
           The clothing <br />
           brand for cats <br />with hats.
         </h2>
-
-        <!-- <div class="icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa fa-envelope"></i></a>
-      </div> -->
       </div>
 
       <div class="footer-content">
