@@ -226,7 +226,7 @@
       </div>
 
       <div class="footer-content">
-        <h4>Nort America</h4>
+        <h4>North America</h4>
         <li>
           <a href="#"><u>catclothingemail@gmail.com</u></a>
         </li>
