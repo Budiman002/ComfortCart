@@ -148,6 +148,15 @@
     border: 1px solid #d9d9d9;
  }
  
+ .main-content .store-menu .content-card .description-menu{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 0.5px;
+    margin: var(--margin);
+ }
+ 
  .main-content .product-menu .description-menu{
     font-family: "Archivo";
     font-weight: 700;
@@ -186,6 +195,27 @@
     background-color: var(--textContrastColor);
     border: 1px solid #d9d9d9;
     margin: var(--margin);
+ }
+ 
+ .main-content .product-menu .content-card .box .search{
+    width: 301px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--primaryColor);
+    opacity: 0.5%;
+ }
+ .main-content .product-menu .content-card .box .search .description-menu{
+    font-family: "Archivo";
+    font-weight: 500;
+    display: flex;
+    text-decoration: none; 
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--primaryColor); 
+    gap: 16px; 
+    font-size: 16px; 
  }
  
  .ProductInfo {
@@ -271,11 +301,7 @@
     border: 1px #D9D9D9 solid;
   }
   
-  .Image2,
-  .Image3,
-  .Image4,
-  .Image5,
-  .Image8 {
+  .items {
     width: 39px;
     height: 45px;
     border-radius: 4px;
@@ -365,108 +391,5 @@
   
   .Active {
     color: #14C25A;
-  }
-  
-  .Group17 div,
-  .Group11 div,
-  .Group12 div,
-  .Group13 div {
-    left: 0;
-    position: absolute;
-    top: 7px;
-  }
-  
-  .Group17 div:nth-child(2),
-  .Group11 div:nth-child(2),
-  .Group12 div:nth-child(2),
-  .Group13 div:nth-child(2) {
-    left: 300px;
-  }
-  
-  .Group17 div:nth-child(3),
-  .Group11 div:nth-child(3),
-  .Group12 div:nth-child(3),
-  .Group13 div:nth-child(3) {
-    left: 877px;
-  }
-  
-  .Group17 div:nth-child(4),
-  .Group11 div:nth-child(4),
-  .Group12 div:nth-child(4),
-  .Group13 div:nth-child(4) {
-    left: 640px;
-  }
-  
-  .Group17 div:last-child,
-  .Group11 div:last-child,
-  .Group12 div:last-child,
-  .Group13 div:last-child {
-    left: 498px;
-  }
-  
-  .Group19,
-  .Frame34,
-  .Filter,
-  .Search {
-    width: 124px;
-    height: 17px;
-    position: relative;
-  }
-  
-  .Page {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    color: #392A2A;
-    font-size: 16px;
-    font-family: Archivo;
-    font-weight: 600;
-    word-wrap: break-word;
-  }
-  
-  .Page:nth-child(2) {
-    left: 80px;
-    opacity: 0.39;
-    text-align: center;
-    letter-spacing: 25.12px;
-  }
-  
-  .Page:last-child {
-    left: 48px;
-  }
-  
-  .Rectangle39,
-  .Rectangle38,
-  .Rectangle37 {
-    width: 87px;
-    height: 35px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    opacity: 0.15;
-    background: #392A2A;
-    border-radius: 20px;
-  }
-  
-  .AddProduct {
-    width: 123px;
-    height: 24px;
-    left: 15px;
-    top: 9px;
-    position: absolute;
-    text-align: right;
-    color: #392A2A;
-    font-size: 16px;
-    font-family: Archivo;
-    font-weight: 600;
-    word-wrap: break-word;
-  }
-  
-  .PlusMath {
-    width: 21px;
-    height: 21px;
-    left: 14px;
-    top: 7px;
-    position: absolute;
   }
   
