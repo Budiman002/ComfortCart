@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}" />
   </head>
   <body>
     <div class="catalog">
@@ -24,7 +24,7 @@
           <p class="produk">High collar wool sweater</p>
           <p class="produk">High collar wool sweater</p>
         </div>
-        
+
           <div class="price">
             <div class="aa price-1">
               <p><s>Rp 1.399.000</s></p>
@@ -42,7 +42,7 @@
               <p><s>Rp 1.399.000</s></p>
               <p class="diskon">Rp 899.000</p>
             </div>
-            
+
           </div>
           <div class="eclipse">
             <img src="{{ asset('asset/Eclipse.png') }}" alt="">
@@ -71,7 +71,7 @@
             <p class="produk">High collar wool sweater</p>
             <p class="produk">High collar wool sweater</p>
           </div>
-          
+
             <div class="price-22">
               <div class="bb price-1">
                 <p>Rp 1.399.000</p>
@@ -85,7 +85,7 @@
               <div class="dd price-4">
                 <p>Rp 1.399.000</p>
               </div>
-              
+
             </div>
             <div class="eclipse">
             <img src="{{ asset('asset/Eclipse.png') }}" alt="">
@@ -98,7 +98,7 @@
       </div>
       </div>
 
-      
+
 
 
 
@@ -119,7 +119,7 @@
             <p class="produk">High collar wool sweater</p>
             <p class="produk">High collar wool sweater</p>
           </div>
-          
+
             <div class="price-22">
               <div class="price-1">
                 <p>Rp 1.399.000</p>
@@ -133,7 +133,7 @@
               <div class="aa price-4">
                 <p>Rp 1.399.000</p>
               </div>
-              
+
             </div>
             <div class="eclipse">
             <img src="{{ asset('asset/Eclipse.png') }}" alt="">
