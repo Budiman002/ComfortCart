@@ -24,12 +24,14 @@
           <li><a href="">Wishlist</a></li>
           <li><a href="">Cart</a></li>
           <li class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: transparent; color: black;">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; color: black;">
               {{ auth()->user()->name }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              @if(auth()->user()->role === 'admin')
+                <li><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
+              @endif
               <li><hr class="dropdown-divider"></li>
               <li>
                 <form action="/logout" method="POST">
@@ -286,3 +288,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+

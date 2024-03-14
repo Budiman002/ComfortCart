@@ -20,6 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware('App\Http\Middleware\IsAdmin');
 //Home Page
 Route::get('/home', function () {
     return view('home');
