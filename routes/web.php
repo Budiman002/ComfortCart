@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterController;
@@ -17,13 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomePageController::class, 'index']);
 //Home Page
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', [HomePageController::class, 'index']);
 
 Route::get('/admin-panel', [AdminController::class,'admin'])->middleware('App\Http\Middleware\IsAdmin');
 
