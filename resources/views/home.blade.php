@@ -12,10 +12,10 @@
     <header>
       <nav class="main-nav flx-row">
         <ul class="flx-row nav-item" role="list">
-          <li><a href="">Men</a></li>
-          <li><a href="">Woman</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Women</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
         <img class="nav-item" src="asset/cat.png" alt="" />
@@ -52,7 +52,7 @@
     <main class="flx-col">
       <span class="graphic1"><img src="asset/bubble1.png" alt="" /></span>
       <span class="graphic2"><img src="asset/bubble2.png" alt="" /></span>
-      <section class="motto flx-col">
+      <section class="motto flx-col" id="about">
         <h1>
           Quality meets style<br />
           with feline finesse.
@@ -68,8 +68,8 @@
 
       <section class="kategori flx-col">
         <div class="gender flx-row">
-          <button>Men</button>
-          <button>Women</button>
+          <button id="men">Men</button>
+          <button id="women">Women</button>
         </div>
 
         <div class="list-kategori flx-row">
@@ -216,7 +216,7 @@
               </div>
           </div>
   
-    <section class="footer">
+    <section class="footer" id="contact">
       <div class="footer-content">
         <span class="kucing"><img src="asset/catreal.svg" alt="" /></span>
         <h2>
