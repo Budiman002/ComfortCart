@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegisterController;
@@ -21,13 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('App\Http\Middleware\IsAdmin');
-//Home Page
+//Home Page tanpa CRUD BE
 Route::get('/home', function () {
-    return view('home');
+    return view('home1');
 });
+//Home Page
+Route::get('/home1', [HomePageController::class, 'index']);
 
 Route::get('/admin-panel', [AdminController::class,'admin'])->middleware('App\Http\Middleware\IsAdmin');
 
