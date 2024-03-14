@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rules\Password;
 
 class RegisterController extends Controller
 {
@@ -12,7 +13,10 @@ class RegisterController extends Controller
         $request->validate([
             'name' => ['required'],
             'email' => ['required', 'ends_with:@gmail.com'],
-            'password' => ['required'],
+            'password' => [
+                'required', 
+                Password::min(8)->letters()->numbers()->mixedCase()->symbols()
+            ],
             'phone' => ['required', 'starts_with:08', 'min:9', 'max:12'],
             'Day_of_Birth' => ['required'],
             'address' => ['required']
