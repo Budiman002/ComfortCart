@@ -4,8 +4,18 @@
 *::after {
   box-sizing: border-box;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f9f1e9;
+}
+
 .catalog {
   width: 1759px;
+  height: 752px;
   background-color: #f9f1e9;
   margin: auto;
   padding-top: 75px;
@@ -60,7 +70,8 @@
   height: 752px;
   background-color: #f9f1e9;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
+
 }
 
 .catalog-2323 {
@@ -91,7 +102,7 @@
   height: 752px;
   background-color: #f9f1e9;
   margin: auto;
-  margin-top: 1025px;
+  margin-top: 20px;
 }
 /* Remove default margin and padding */
 * {
@@ -328,7 +339,6 @@ a {
   color: var(--cokelat);
   font-weight: bolder;
 }
-
 /*!Footer  */
 
 .footer h2 {

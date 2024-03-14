@@ -20,23 +20,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Home Page
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/home2', function () {
-    return view('home2');
-});
 
-Route::get('/admin-panel', [AdminController::class,'admin']);
+Route::get('/admin-panel', [AdminController::class,'admin'])->middleware('App\Http\Middleware\IsAdmin');
 
 //page create product
-Route::get('/add-product', [ProductController::class,'redirectToCreateProductPage']);
+Route::get('/add-product', [ProductController::class,'redirectToCreateProductPage'])->middleware('App\Http\Middleware\IsAdmin');
 
 //post data produk
 Route::post('/post-add-product',[ProductController::class, 'createProduct']);
 
 //page update produck
-Route::get('/edit-product-page/{id}',[ProductController::class,'editProductPage']);
+Route::get('/edit-product-page/{id}',[ProductController::class,'editProductPage'])->middleware('App\Http\Middleware\IsAdmin');
 //post update data dari table
 Route::post('/edit-product/{id}',[ProductController::class,'editProduct']);
 
@@ -51,8 +49,9 @@ Route::get('/register', function () {
 //Login
 Route::get('/login', function () {
     return view('login');
-});
-
+})->middleware('guest');
 
 Route::post('/register', [RegisterController::class, 'store']);
+
 Route::post('/login', [LoginController::class, 'aunth']);
+Route::post('/logout', [LoginController::class, 'logout']);

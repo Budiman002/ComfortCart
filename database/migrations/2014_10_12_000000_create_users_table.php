@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('address');
             $table->string('phone');
+            $table->enum('role',['user', 'admin'])->default('user')->nullable();
             $table->date('Day_of_Birth');
             $table->rememberToken();
             $table->timestamps();

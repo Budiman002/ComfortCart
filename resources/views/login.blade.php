@@ -19,7 +19,7 @@
 <body>
     <img src="images/vector.png" alt="" class="back">
     <form action="/login" method = "POST">
-        @csrf
+    @csrf
     
     <div class="main">
         <div class="container">

@@ -46,7 +46,7 @@
                         
                         <p id="error-email" class="error-message"></p>
                         @error('email')
-                        <p>{{$message}}</p>
+                            <p>{{$message}}</p>
                         @enderror
                     </div>
                     

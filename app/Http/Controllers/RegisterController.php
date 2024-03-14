@@ -27,6 +27,6 @@ class RegisterController extends Controller
             'password' => $request->password
         ]);
 
-        return view('login');
+        return view('home');
     }
 }
